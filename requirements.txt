@@ -1,0 +1,2 @@
+# Dependências dos testes — o domínio é Python puro, sem FastAPI.
+pytest>=7.0

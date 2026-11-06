@@ -2,7 +2,7 @@
 
 ## Sobre o projeto
 
-Mapeamento de processos de negócio (BPM) de um cliente que vende **cursos online**. Por enquanto não há código: o repositório contém apenas documentação de processos **AS-IS** (como são executados hoje), com o objetivo futuro de propor um **TO-BE** (processos melhorados/automatizados).
+Mapeamento de processos de negócio (BPM) de um cliente que vende **cursos online**. O código começou pelos testes da US-08: `src/dominio/` (stubs das classes dos passos 2 e 3) e `tests/` (pytest — ver `tests/README.md`). O restante é documentação de processos **AS-IS** (como são executados hoje), com o objetivo futuro de propor um **TO-BE** (processos melhorados/automatizados).
 
 Idioma de todo o conteúdo: **português (pt-BR)**.
 
@@ -25,6 +25,8 @@ docs/processos/
     └── NN-nome-do-processo.md    # ficha do processo
 docs/requisitos/historias/   # histórias de usuário da v1 (US-NN-<slug>.md) e backlog no README
 docs/projeto/                # das histórias ao projeto OO (bottom-up, FastAPI): passos NN-*.md, diagramas em Mermaid
+src/dominio/                 # classes de domínio (Python puro, sem FastAPI) — stubs dos passos 2 e 3
+tests/                       # testes de unidade (pytest); US-08 primeiro, matriz de rastreabilidade no README
 ```
 
 O projeto (`docs/projeto/`) cita critérios de aceitação como `US-NN cN` e mantém a rastreabilidade história → critério → método → teste. Ao mudar uma história, conferir os passos 2 e 3.
